@@ -49,7 +49,7 @@ const Minter: React.FC = () => {
           amt: "1000",
         };
         const msg_base64 = btoa(`data:,${JSON.stringify(msg)}`);
-        const fee = calculateFee(100000, "0.085usei");
+        const fee = calculateFee(100000, "0.12usei");
         const response = await client.sendTokens(
           address,
           address,
